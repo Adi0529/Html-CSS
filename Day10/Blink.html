@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(219, 177, 38);
+        height: 100vh;
+        align-content: center;
+    }
+    .blink{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+        margin: auto;
+        animation: blink 5s 5s;
+        transition: all 2s;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0.8;
+            transform: scale(1.5);
+            background-color: rgb(209, 36, 36);
+        }
+        30% {
+            opacity: 0.5;
+            
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.3;
+            transform: scale(1.5);
+            background-color: rgb(203, 41, 41);
+        }
+        70% {
+            opacity: 0.5;   
+            transform: scale(1);
+            background-color: rgb(228, 32, 32);
+        }
+        100% {
+            opacity: 1;
+            background-color: rgb(213, 42, 42);
+            transform: scale(1.5);
+        }
+    }
+</style>
+<body>
+    
+    <div class="blink">
+
+    </div>
+</body>
+</html>

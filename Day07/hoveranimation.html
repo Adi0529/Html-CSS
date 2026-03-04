@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            align-content: center;
+        }
+        body{
+            width:100%;
+            height:100vh;
+            background-color: rgb(179, 123, 54);
+        }
+        .container{
+            width:40%;
+            margin-top: 40px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 5px;
+            background-color: aliceblue;
+            animation: start 5s ease 2s infinite;
+            transition:all 7s;
+
+        }
+        .container img{
+            width:100%;
+        }
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px;
+        }
+        img{
+            overflow: hidden;
+            width:200px;
+            height: 350px;
+        }
+        img:hover{
+            transform: scale(1.1);
+            
+        }
+        @keyframes start {
+           from{
+            box-shadow: 2px 2px 1px 2px lightblue;
+            
+            
+           } 
+           to{
+            
+            box-shadow: 10px 10px 5px 5px lightblue;
+           }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Animation on hover</h1>
+        <img src="img/1.jpg" alt="">
+    </div>
+</body>
+</html>

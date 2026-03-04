@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:10px;
+        }
+        body{
+            width:100%;
+            height:100vh;
+        }
+        .Pricing{
+            display: flex;
+            flex-direction: row;
+            width:70%;
+            gap:40px;
+            margin: auto;
+            justify-content: center;
+        }
+        .pricing-items{
+            width:40%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            border: 1px solid black ;
+            
+            
+
+        }
+        .pricing-items:hover{
+            transform: scale(1.08);
+            background-color: black;
+            color: aliceblue;
+            border: 1px solid white ;
+        }
+        p{
+            width:100%
+        }
+        ul{
+            list-style: none;
+            padding: 10px;
+        }
+        li{
+            width:100%;
+            text-align: left;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        i {
+            font-style: normal;
+            text-align: left;
+            align-items: center;
+            gap: 5px;
+        }
+        b{
+            font-size: 3rem;
+        }
+        .fa-solid{
+            text-align: left;
+        }
+        .subscirbe{
+            border-radius: 5px;
+            width:140px;
+            height: 50px;
+            text-align: center;
+            font-size: 1.1rem;
+            background-color: rgb(207, 152, 152);
+            margin: auto;
+            margin-bottom: 20px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="Pricing">
+        <div class="pricing-items">
+            <h1>Free Plan</h1>
+            <p>for Personal</p>
+            <p><b>&#36;0</b></p>
+            <ul>
+                <li><i class="fa-solid fa-circle-check"></i> 1 user</li>
+                <li><i class="fa-solid fa-circle-check"></i> 4 Web Mails</li>
+                <li><i class="fa-solid fa-circle-check"></i> Responsive Website</li>
+                <li><i class="fa-solid fa-circle-check"></i> Free SSL</li>
+            </ul>
+            <button class="subscirbe"> Subscribe now</button>
+        </div>
+        <div class="pricing-items ">
+            <h1>Basic Plan</h1>
+            <p>For small orgnization</p>
+            <p><b>&#36;29</b></p>
+             <ul>
+                <li><i class="fa-solid fa-circle-check"></i> 4 user</li>
+                <li><i class="fa-solid fa-circle-check"></i> 10 Web Mails</li>
+                <li><i class="fa-solid fa-circle-check"></i> Responsive Website</li>
+                <li><i class="fa-solid fa-circle-check"></i> Free SSL + SEO</li>
+            </ul>
+            <button class="subscirbe">Subscribe now</button>
+        </div>
+        <div class="pricing-items">
+            <h1>Pro Plan</h1>
+            <p>for enterprise</p>
+            <p><b>&#36;49</b></p>
+            <ul>
+                <li><i class="fa-solid fa-circle-check"></i> unlimited user</li>
+                <li><i class="fa-solid fa-circle-check"></i> unlimited Web Mails</li>
+                <li><i class="fa-solid fa-circle-check"></i> Responsive Website</li>
+                <li><i class="fa-solid fa-circle-check"></i> Free SSL</li>
+            </ul>
+            <button class="subscirbe">Subscribe now</button>
+        </div>
+    </div>
+</body>
+</html>
