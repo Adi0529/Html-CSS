@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: antiquewhite;
+        width:100%;
+        height: 100vh;
+       
+        align-content: center;
+        
+        
+    }
+    .fruit-gallary{
+        width:70%;
+        display: grid;
+        grid-template-areas: 'f1 f2 f3 f3'
+                             'f4 f4 f3 f3'
+                             'f4 f4 f3 f3'
+                             'f5 f5 f6 f6'
+                             'f5 f5 f6 f6';
+        width: 600px;
+        border:1px solid black;
+        gap: 10px;
+        margin:auto;
+        
+    }
+    .image1 .image2 .image3 .image4 .image5 .image6{
+        overflow: hidden;
+        
+
+    }
+    h2{
+        object-fit: cover;
+    }
+    .image1{
+        grid-area: f1;
+    }
+    .image2{
+        grid-area: f2;
+    }
+    .image3{
+        grid-area: f3;
+    }
+    .image4{
+        grid-area: f4;
+    }
+    .image5{
+        grid-area: f5;
+    }
+    .image6{
+        grid-area: f6;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        display: block;
+    }
+    img:hover{
+        transform: scale(1.05);
+    }
+    
+</style>
+<body>
+    <div class="fruit-gallary">
+        <div class="image1">
+            <img src="img/f1.jpg" alt="">
+        </div>
+        <div class="image2">
+            <img src="img/f2.webp" alt="">
+        </div>
+        <div class="image3">
+            <img src="img/f3.jpg" alt="">
+        </div>
+        <div class="image4">
+            <img src="img/f4.webp" alt="">
+        </div>
+        <div class="image5">
+            <img src="img/f5.avif" alt="">
+        </div>
+        <div class="image6">
+            <img src="img/f6.avif" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

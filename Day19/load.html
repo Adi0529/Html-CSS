@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .sec{
+            height: 50px;
+            width:50px;
+            margin:10px;
+            border-radius: 50%;
+            animation: load 2.4s ease-in-out;
+            animation-iteration-count: infinite;
+            
+            
+
+        }
+
+        @keyframes load{
+           0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-60px);
+            }
+        }
+        .red{
+            background-color: red;
+            animation-delay:0s;
+        }
+        .green{
+            background-color: green;
+            animation-delay:0.2s;
+        }
+        .blue{
+            background-color: blue;
+            animation-delay:0.6s;
+        }
+        .yellow{
+            background-color: yellow;
+            animation-delay:0.8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="sec red"></div>
+    <div class="sec green"></div>
+    <div class="sec blue"></div>
+    <div class="sec yellow"></div>
+</body>
+</html>
